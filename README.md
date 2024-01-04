@@ -1,8 +1,8 @@
-#  Обнаружение человека с камерой наблюдения.
+#  Обнаружение человека с помощью камеры видеонаблюдения
 
-Проект написан python и opensource фреймворке https://streamlit.io/
-Деплой на серверах Streamlit.
-Million thanks to Streamlit.
+Проект написан на opensource фреймворке [Streamlit](https://streamlit.io/) и модели Yolo8 от [Ultralytics](https://www.ultralytics.com/ru/). \
+Деплой на серверах Streamlit.\
+Million thanks to Streamlit and Ultralytics. :heart: 🚀
 
 ---
 **Проблема**: охранная система, построенная на датчиках движения, срабатывает на кошку, камера видеонаблюдения работает отдельно и только снимает происходящее.
@@ -30,4 +30,4 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Many thanks to [CodingMantras](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/)
+For "backbone" many thanks to [CodingMantras](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/)
