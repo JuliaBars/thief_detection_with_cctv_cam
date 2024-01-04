@@ -5,6 +5,7 @@ import cv2
 import numpy
 import pytest
 import streamlit as st
+from streamlit.testing.v1 import AppTest
 
 import settings
 from helper import YOLO, YouTube, _display_detected_frames, load_model
@@ -14,6 +15,12 @@ from helper import YOLO, YouTube, _display_detected_frames, load_model
 def model():
     model_path = Path(settings.DETECTION_MODEL)
     return YOLO(model_path)
+
+
+def test_app():
+    app = AppTest.from_file('app.py')
+    app.run()
+    assert not app.exception
 
 
 def test_load_model():
