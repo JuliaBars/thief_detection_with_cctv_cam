@@ -24,5 +24,7 @@ VIDEOS_DICT = {
     'thief': VIDEO_DIR / 'thief.mp4',
 }
 
+TEST_PIC = ROOT / 'picture_for_test' / 'test_human.jpg'
+
 MODEL_DIR = ROOT / 'weights'
 DETECTION_MODEL = MODEL_DIR / 'yolov8n.pt'
