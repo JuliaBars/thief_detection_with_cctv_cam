@@ -34,10 +34,17 @@ _Это часть проекта, для демонстрации работы 
 
 ### Локальный запуск:
 ```
-git clone 
-cd 
+git clone https://github.com/JuliaBars/thief_detection_with_cctv_cam
+cd thief_detection_with_cctv_cam
 pip install -r requirements.txt
+```
+Запустите тесты:
+```
+pytest
+```
+И запустите проект:
+```
 streamlit run app.py
 ```
 
-For "backbone" many thanks to [CodingMantras](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/)
+_For "backbone" many thanks to [CodingMantras](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/)_
